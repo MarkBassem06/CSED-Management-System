@@ -8,7 +8,6 @@ generator client {
 // MongoDB datasource configuration
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
 }
 // user model representing application users
 model User {

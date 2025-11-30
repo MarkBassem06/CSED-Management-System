@@ -21,10 +21,11 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.20.0",
-    "prisma": "^6.16.3"
+    "mongodb": "^6.20.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.10",
+    "prisma": "^7.0.1"
   }
 }
