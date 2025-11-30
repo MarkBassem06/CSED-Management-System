@@ -79,6 +79,8 @@ model Material {
 }
 
 
+
+
 // // post model representing real estate listings
 // model Post {
 //   id        String   @id @default(auto()) @map("_id") @db.ObjectId
@@ -101,18 +103,18 @@ model Material {
 // }
 
 // enums for transaction type
-enum Type{
-  rent
-  buy
-}
+// enum Type{
+//   rent
+//   buy
+// }
 
-// enums for property type 
-enum Property{
-  house
-  apartment
-  condo 
-  land
-}
+// // enums for property type 
+// enum Property{
+//   house
+//   apartment
+//   condo 
+//   land
+// }
 
 
 // // detailed information for each post
