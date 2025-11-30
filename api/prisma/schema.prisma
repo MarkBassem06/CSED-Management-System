@@ -9,6 +9,8 @@ generator client {
 datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
+  
+  
 }
 
 // user model representing application users
@@ -68,6 +70,12 @@ model Course {
   materialIDs String[] @db.ObjectId
   tasks     Task[]   @relation(fields: [taskIDs], references: [id])
   taskIDs   String[] @db.ObjectId
+  announcements Announcement[]
+  lectures  Lecture[]
+  exams     Exams[]
+  labs      Labs[]
+  sheets    Sheets[]
+  references References[]
 }
 
 model Material {
@@ -79,7 +87,60 @@ model Material {
   courseIDs String[] @db.ObjectId
 }
 
+model Announcement {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
 
+model Lecture {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  slidesUrl  String
+  videoUrl  String?
+  createdAt DateTime @default(now())
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
+
+model Exams {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  examUrl   String
+  date      DateTime
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
+
+model Labs{
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  labUrl    String
+  createdAt DateTime @default(now())
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
+
+model Sheets{
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  sheetUrl   String
+  createdAt DateTime @default(now())
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
+
+model References{
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  description String
+  referenceurl       String
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
 
 
 // // post model representing real estate listings
