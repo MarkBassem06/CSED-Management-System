@@ -1,11 +1,9 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
-
-// Placeholder components to make the Router work without errors
-const Home = () => <div className="text-text-dark text-center mt-20 text-2xl">Home Page</div>;
-const Levels = () => <div className="text-text-dark text-center mt-20 text-2xl">Levels Page</div>;
-const Courses = () => <div className="text-text-dark text-center mt-20 text-2xl">Courses Page</div>;
-const MyProgress = () => <div className="text-text-dark text-center mt-20 text-2xl">My Progress Page</div>;
-const NotFound = () => <div className="text-text-dark text-center mt-20 text-2xl">404 - Not Found</div>;
+import Home from './Pages/Home'
+import Levels from './Pages/Levels'
+import Courses from './Pages/Courses'
+import MyProgress from './Pages/MyProgress'
+import NotFound from './Pages/NotFound'
 
 function App() {
   const location = useLocation();
@@ -118,9 +116,8 @@ function App() {
           <Route path="/myprogress" element={<MyProgress />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
-      </div>
+      </div>  
     </div>
   )
 }
-
 export default App
