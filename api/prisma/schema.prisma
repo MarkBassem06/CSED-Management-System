@@ -18,32 +18,87 @@ model User {
   password  String
   avatar    String?
   createdAt DateTime @default(now())
-  posts     Post[]
-  savedPosts SavedPost[]
-  chats      Chat[]      @relation(fields: [chatIDs], references: [id])
-  chatIDs    String[]    @db.ObjectId
+  // posts     Post[]
+  // savedPosts SavedPost[]
+  // chats      Chat[]      @relation(fields: [chatIDs], references: [id])
+  // chatIDs    String[]    @db.ObjectId
+  isAdmin   Boolean  @default(false)
+
+  //added 
+  level     Int      @default(0)
+  courses   Course[]  @relation(fields: [courseIDs], references: [id])
+  courseIDs String[]  @db.ObjectId
+
+  timetable String[] @default([]) 
+  MyTasks   MyTask[]  
+
 }
 
-// post model representing real estate listings
-model Post {
+model MyTask {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  title  String   
-  price    Int   
-  images    String[]   
-  address    String   
-  city    String
-  bathroom    Int   
-  bedroom    Int      
-  latitude    String   
-  longitude    String   
-  property Property
-  type    Type
+  title     String
+  description String
+  user        User     @relation(fields: [userID], references: [id])
+  userID    String   @db.ObjectId
+
   createdAt DateTime @default(now())
-  user User @relation(fields: [userID], references: [id])
-  userID String @db.ObjectId
-  postDetail PostDetail?
-  savedPosts SavedPost[]
+  isCompleted Boolean @default(false)
 }
+
+model Task {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  description String
+  courses   Course[]  @relation(fields: [courseIDs], references: [id])
+  courseIDs String[]  @db.ObjectId
+  createdAt DateTime @default(now())
+  isCompleted Boolean @default(false)
+}
+
+model Course {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  description String
+  users     User[]   @relation(fields: [userIDs], references: [id])
+  userIDs   String[] @db.ObjectId
+  createdAt DateTime @default(now())
+  comments  String[] @default([])
+  materials  Material[] @relation(fields: [materialIDs], references: [id])
+  materialIDs String[] @db.ObjectId
+  tasks     Task[]   @relation(fields: [taskIDs], references: [id])
+  taskIDs   String[] @db.ObjectId
+}
+
+model Material {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  description String
+  createdAt DateTime @default(now())
+  Courses Course[] @relation(fields: [courseIDs], references: [id])
+  courseIDs String[] @db.ObjectId
+}
+
+
+// // post model representing real estate listings
+// model Post {
+//   id        String   @id @default(auto()) @map("_id") @db.ObjectId
+//   title  String   
+//   price    Int   
+//   images    String[]   
+//   address    String   
+//   city    String
+//   bathroom    Int   
+//   bedroom    Int      
+//   latitude    String   
+//   longitude    String   
+//   property Property
+//   type    Type
+//   createdAt DateTime @default(now())
+//   user User @relation(fields: [userID], references: [id])
+//   userID String @db.ObjectId
+//   postDetail PostDetail?
+//   savedPosts SavedPost[]
+// }
 
 // enums for transaction type
 enum Type{
@@ -57,54 +112,53 @@ enum Property{
   apartment
   condo 
   land
-
 }
 
 
-// detailed information for each post
-model PostDetail {
-  id         String  @id @default(auto()) @map("_id") @db.ObjectId
-  desc       String
-  utilities  String?
-  pet        String?
-  income     String?
-  size       Int?
-  school     Int?
-  bus        Int?
-  restaurant Int?
-  post       Post    @relation(fields: [postId], references: [id])
-  postId     String  @unique @db.ObjectId
-}
+// // detailed information for each post
+// model PostDetail {
+//   id         String  @id @default(auto()) @map("_id") @db.ObjectId
+//   desc       String
+//   utilities  String?
+//   pet        String?
+//   income     String?
+//   size       Int?
+//   school     Int?
+//   bus        Int?
+//   restaurant Int?
+//   post       Post    @relation(fields: [postId], references: [id])
+//   postId     String  @unique @db.ObjectId
+// }
 
-// saved posts model
-model SavedPost {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  user      User     @relation(fields: [userId], references: [id])
-  post      Post     @relation(fields: [postId], references: [id])
-  userId    String   @db.ObjectId
-  postId    String   @db.ObjectId
-  createdAt DateTime @default(now())
+// // saved posts model
+// model SavedPost {
+//   id        String   @id @default(auto()) @map("_id") @db.ObjectId
+//   user      User     @relation(fields: [userId], references: [id])
+//   post      Post     @relation(fields: [postId], references: [id])
+//   userId    String   @db.ObjectId
+//   postId    String   @db.ObjectId
+//   createdAt DateTime @default(now())
 
-  @@unique([userId, postId])
-}
+//   @@unique([userId, postId])
+// }
 
-// chat model representing conversations between users
-model Chat {
-  id        String    @id @default(auto()) @map("_id") @db.ObjectId
-  users     User[]    @relation(fields: [userIDs], references: [id])
-  userIDs   String[]  @db.ObjectId
-  createdAt DateTime  @default(now())
-  seenBy    String[]  @db.ObjectId
-  messages  Message[]
-  lastMessage String?
-}
+// // chat model representing conversations between users
+// model Chat {
+//   id        String    @id @default(auto()) @map("_id") @db.ObjectId
+//   users     User[]    @relation(fields: [userIDs], references: [id])
+//   userIDs   String[]  @db.ObjectId
+//   createdAt DateTime  @default(now())
+//   seenBy    String[]  @db.ObjectId
+//   messages  Message[]
+//   lastMessage String?
+// }
 
-// message model representing individual messages in a chat
-model Message {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  text      String
-  userId    String
-  chat      Chat     @relation(fields: [chatId], references: [id])
-  chatId    String   @db.ObjectId
-  createdAt DateTime @default(now())
-}
+// // message model representing individual messages in a chat
+// model Message {
+//   id        String   @id @default(auto()) @map("_id") @db.ObjectId
+//   text      String
+//   userId    String
+//   chat      Chat     @relation(fields: [chatId], references: [id])
+//   chatId    String   @db.ObjectId
+//   createdAt DateTime @default(now())
+// }
