@@ -1,0 +1,240 @@
+// Prisma schema file defining the database models and relations
+// generator configuration for Prisma Client
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+// MongoDB datasource configuration
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// user model representing application users
+model User {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  username  String   @unique
+  email     String   @unique
+  password  String
+  avatar    String?
+  createdAt DateTime @default(now())
+  isAdmin   Boolean  @default(false)
+  level     Int      @default(0)
+  userCourses UserCourse[]  // relation to courses through join table
+  timetable String[] @default([]) 
+  MyTasks   MyTask[]  // user self created tasks , tasks published by the representive
+  streak     Int      @default(0) 
+  stackFinishedTasks   String[] @default([])
+}
+
+model MyTask {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  description String
+  user        User     @relation(fields: [userID], references: [id])
+  userID    String   @db.ObjectId
+
+  taskId    String?   
+  createdAt DateTime @default(now())
+  isCompleted Boolean @default(false)
+  deadline    DateTime
+}
+
+model Task {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  description String
+  course   Course  @relation(fields: [courseID], references: [id])
+  courseID String  @db.ObjectId
+  createdAt DateTime @default(now())
+  isCompleted Boolean @default(false)
+  deadline    DateTime
+
+}
+
+// Join table to track user enrollment and progress in courses
+model UserCourse {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String   @db.ObjectId
+  course    Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  courseId  String   @db.ObjectId
+  isCompleted Boolean @default(false)
+  progress    Int     @default(0) // percentage or number of completed tasks
+  enrolledAt  DateTime @default(now())
+  completedAt DateTime?
+  
+  @@unique([userId, courseId]) // prevent duplicate enrollments
+}
+
+model Course {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  description String
+  userCourses UserCourse[]  // relation to users through join table
+  createdAt DateTime @default(now())
+  comments  String[] @default([])
+  materials  Material[] @relation(fields: [materialIDs], references: [id])
+  materialIDs String[] @db.ObjectId
+  tasks     Task[]   
+  announcements Announcement[]
+  lectures  Lecture[]
+  exams     Exams[]
+  labs      Labs[]
+  sheets    Sheets[]
+  references References[]
+  level     Int      @default(0)
+  totalTasks Int      @default(0)
+  code      String    @default("")
+}
+
+model Material {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  description String
+  createdAt DateTime @default(now())
+  Courses Course[] @relation(fields: [courseIDs], references: [id])
+  courseIDs String[] @db.ObjectId
+}
+
+model Announcement {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
+
+model Lecture {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  slidesUrl  String
+  videoUrl  String?
+  createdAt DateTime @default(now())
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+
+}
+
+model Exams {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  examUrl   String
+  date      DateTime
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
+
+model Labs{
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  labUrl    String
+  createdAt DateTime @default(now())
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
+
+model Sheets{
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  sheetUrl   String
+  createdAt DateTime @default(now())
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
+
+model References{
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  description String
+  referenceurl       String
+  course   Course  @relation(fields: [courseIDs], references: [id])
+  courseIDs String  @db.ObjectId
+}
+
+
+// // post model representing real estate listings
+// model Post {
+//   id        String   @id @default(auto()) @map("_id") @db.ObjectId
+//   title  String   
+//   price    Int   
+//   images    String[]   
+//   address    String   
+//   city    String
+//   bathroom    Int   
+//   bedroom    Int      
+//   latitude    String   
+//   longitude    String   
+//   property Property
+//   type    Type
+//   createdAt DateTime @default(now())
+//   user User @relation(fields: [userID], references: [id])
+//   userID String @db.ObjectId
+//   postDetail PostDetail?
+//   savedPosts SavedPost[]
+// }
+
+// enums for transaction type
+// enum Type{
+//   rent
+//   buy
+// }
+
+// // enums for property type 
+// enum Property{
+//   house
+//   apartment
+//   condo 
+//   land
+// }
+
+
+// // detailed information for each post
+// model PostDetail {
+//   id         String  @id @default(auto()) @map("_id") @db.ObjectId
+//   desc       String
+//   utilities  String?
+//   pet        String?
+//   income     String?
+//   size       Int?
+//   school     Int?
+//   bus        Int?
+//   restaurant Int?
+//   post       Post    @relation(fields: [postId], references: [id])
+//   postId     String  @unique @db.ObjectId
+// }
+
+// // saved posts model
+// model SavedPost {
+//   id        String   @id @default(auto()) @map("_id") @db.ObjectId
+//   user      User     @relation(fields: [userId], references: [id])
+//   post      Post     @relation(fields: [postId], references: [id])
+//   userId    String   @db.ObjectId
+//   postId    String   @db.ObjectId
+//   createdAt DateTime @default(now())
+
+//   @@unique([userId, postId])
+// }
+
+// // chat model representing conversations between users
+// model Chat {
+//   id        String    @id @default(auto()) @map("_id") @db.ObjectId
+//   users     User[]    @relation(fields: [userIDs], references: [id])
+//   userIDs   String[]  @db.ObjectId
+//   createdAt DateTime  @default(now())
+//   seenBy    String[]  @db.ObjectId
+//   messages  Message[]
+//   lastMessage String?
+// }
+
+// // message model representing individual messages in a chat
+// model Message {
+//   id        String   @id @default(auto()) @map("_id") @db.ObjectId
+//   text      String
+//   userId    String
+//   chat      Chat     @relation(fields: [chatId], references: [id])
+//   chatId    String   @db.ObjectId
+//   createdAt DateTime @default(now())
+// }

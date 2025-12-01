@@ -4,6 +4,8 @@ import Levels from './Pages/Levels'
 import Courses from './Pages/Courses'
 import MyProgress from './Pages/MyProgress'
 import NotFound from './Pages/NotFound'
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 function App() {
   const location = useLocation();
   const currentPath = location.pathname;
@@ -18,7 +20,7 @@ function App() {
         
         {/* 1. Logo (Order 1: Always Top Left) */}
         <div className="flex items-center gap-3 order-1">
-          <div className="w-10 h-10 bg-gradient-to-br from-fuchsia-600 to-violet-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20 shrink-0">
+          <div className="w-10 h-10 bg-linear-to-br from-fuchsia-600 to-violet-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20 shrink-0">
             <i className="fa-solid fa-graduation-cap text-lg"></i>
           </div>
           <div >
@@ -112,7 +114,10 @@ function App() {
           <Route path="/levels" element={<Levels />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/myprogress" element={<MyProgress />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/*" element={<NotFound />} />
+
         </Routes>
       </div>
     </div>
