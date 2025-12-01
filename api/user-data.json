@@ -1,0 +1,727 @@
+{
+  "id": "692e07f55ed4eb7ec4d4321c",
+  "username": "seed_user",
+  "email": "seed.user@example.com",
+  "password": "$2b$10$7miqTvy0LwNu0VcvuLiwm.iH3Xq/ZY6SgO7PMtlQN7DWXfti7i93a",
+  "avatar": null,
+  "createdAt": "2025-12-01T21:26:12.679Z",
+  "isAdmin": false,
+  "level": 0,
+  "timetable": [],
+  "streak": 0,
+  "stackFinishedTasks": [
+    "692e08025ed4eb7ec4d43247",
+    "692e08055ed4eb7ec4d43250",
+    "692e08055ed4eb7ec4d43252",
+    "692e08065ed4eb7ec4d43254",
+    "692e08065ed4eb7ec4d43255",
+    "692e08095ed4eb7ec4d4325d",
+    "692e080a5ed4eb7ec4d43260"
+  ],
+  "MyTasks": [
+    {
+      "id": "692e08025ed4eb7ec4d43247",
+      "title": "Seed Course 1 - Task 1",
+      "description": "Description for Seed Course 1 - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f65ed4eb7ec4d4321f",
+      "createdAt": "2025-12-01T21:26:26.615Z",
+      "isCompleted": true,
+      "deadline": "2025-12-05T23:59:59.000Z"
+    },
+    {
+      "id": "692e08025ed4eb7ec4d43248",
+      "title": "Seed Course 1 - Task 2",
+      "description": "Description for Seed Course 1 - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f65ed4eb7ec4d43220",
+      "createdAt": "2025-12-01T21:26:26.902Z",
+      "isCompleted": false,
+      "deadline": "2025-12-08T23:59:59.000Z"
+    },
+    {
+      "id": "692e08035ed4eb7ec4d43249",
+      "title": "Seed Course 1 - Task 3",
+      "description": "Description for Seed Course 1 - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f65ed4eb7ec4d43221",
+      "createdAt": "2025-12-01T21:26:27.208Z",
+      "isCompleted": false,
+      "deadline": "2025-12-10T23:59:59.000Z"
+    },
+    {
+      "id": "692e08035ed4eb7ec4d4324a",
+      "title": "Seed Course 1 - Task 4",
+      "description": "Description for Seed Course 1 - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f75ed4eb7ec4d43222",
+      "createdAt": "2025-12-01T21:26:27.490Z",
+      "isCompleted": false,
+      "deadline": "2025-12-12T23:59:59.000Z"
+    },
+    {
+      "id": "692e08035ed4eb7ec4d4324b",
+      "title": "Seed Course 1 - Task 5",
+      "description": "Description for Seed Course 1 - Task 5",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f75ed4eb7ec4d43223",
+      "createdAt": "2025-12-01T21:26:27.758Z",
+      "isCompleted": false,
+      "deadline": "2025-12-15T23:59:59.000Z"
+    },
+    {
+      "id": "692e08045ed4eb7ec4d4324c",
+      "title": "Seed Course 1 - Task 6",
+      "description": "Description for Seed Course 1 - Task 6",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f75ed4eb7ec4d43224",
+      "createdAt": "2025-12-01T21:26:28.038Z",
+      "isCompleted": false,
+      "deadline": "2025-12-18T23:59:59.000Z"
+    },
+    {
+      "id": "692e08045ed4eb7ec4d4324d",
+      "title": "Seed Course 2 - Task 1",
+      "description": "Description for Seed Course 2 - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f85ed4eb7ec4d43227",
+      "createdAt": "2025-12-01T21:26:28.321Z",
+      "isCompleted": false,
+      "deadline": "2025-12-20T23:59:59.000Z"
+    },
+    {
+      "id": "692e08045ed4eb7ec4d4324e",
+      "title": "Seed Course 2 - Task 2",
+      "description": "Description for Seed Course 2 - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f95ed4eb7ec4d43228",
+      "createdAt": "2025-12-01T21:26:28.592Z",
+      "isCompleted": false,
+      "deadline": "2025-12-22T23:59:59.000Z"
+    },
+    {
+      "id": "692e08045ed4eb7ec4d4324f",
+      "title": "Seed Course 2 - Task 3",
+      "description": "Description for Seed Course 2 - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f95ed4eb7ec4d43229",
+      "createdAt": "2025-12-01T21:26:28.863Z",
+      "isCompleted": false,
+      "deadline": "2025-12-25T23:59:59.000Z"
+    },
+    {
+      "id": "692e08055ed4eb7ec4d43250",
+      "title": "Seed Course 2 - Task 4",
+      "description": "Description for Seed Course 2 - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f95ed4eb7ec4d4322a",
+      "createdAt": "2025-12-01T21:26:29.139Z",
+      "isCompleted": true,
+      "deadline": "2025-12-28T23:59:59.000Z"
+    },
+    {
+      "id": "692e08055ed4eb7ec4d43251",
+      "title": "Seed Course 2 - Task 5",
+      "description": "Description for Seed Course 2 - Task 5",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fa5ed4eb7ec4d4322b",
+      "createdAt": "2025-12-01T21:26:29.411Z",
+      "isCompleted": false,
+      "deadline": "2026-01-02T23:59:59.000Z"
+    },
+    {
+      "id": "692e08055ed4eb7ec4d43252",
+      "title": "Seed Course 2 - Task 6",
+      "description": "Description for Seed Course 2 - Task 6",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fb5ed4eb7ec4d4322c",
+      "createdAt": "2025-12-01T21:26:29.679Z",
+      "isCompleted": true,
+      "deadline": "2026-01-05T23:59:59.000Z"
+    },
+    {
+      "id": "692e08065ed4eb7ec4d43253",
+      "title": "Seed Course 3 - Task 1",
+      "description": "Description for Seed Course 3 - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fb5ed4eb7ec4d4322f",
+      "createdAt": "2025-12-01T21:26:29.999Z",
+      "isCompleted": false,
+      "deadline": "2026-01-08T23:59:59.000Z"
+    },
+    {
+      "id": "692e08065ed4eb7ec4d43254",
+      "title": "Seed Course 3 - Task 2",
+      "description": "Description for Seed Course 3 - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fc5ed4eb7ec4d43230",
+      "createdAt": "2025-12-01T21:26:30.273Z",
+      "isCompleted": true,
+      "deadline": "2026-01-10T23:59:59.000Z"
+    },
+    {
+      "id": "692e08065ed4eb7ec4d43255",
+      "title": "Seed Course 3 - Task 3",
+      "description": "Description for Seed Course 3 - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fc5ed4eb7ec4d43231",
+      "createdAt": "2025-12-01T21:26:30.551Z",
+      "isCompleted": true,
+      "deadline": "2026-01-12T23:59:59.000Z"
+    },
+    {
+      "id": "692e08065ed4eb7ec4d43256",
+      "title": "Seed Course 3 - Task 4",
+      "description": "Description for Seed Course 3 - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fc5ed4eb7ec4d43232",
+      "createdAt": "2025-12-01T21:26:30.825Z",
+      "isCompleted": false,
+      "deadline": "2026-01-15T23:59:59.000Z"
+    },
+    {
+      "id": "692e08075ed4eb7ec4d43257",
+      "title": "Seed Course 4 - Task 1",
+      "description": "Description for Seed Course 4 - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fd5ed4eb7ec4d43235",
+      "createdAt": "2025-12-01T21:26:31.096Z",
+      "isCompleted": false,
+      "deadline": "2026-01-18T23:59:59.000Z"
+    },
+    {
+      "id": "692e08075ed4eb7ec4d43258",
+      "title": "Seed Course 4 - Task 2",
+      "description": "Description for Seed Course 4 - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fd5ed4eb7ec4d43236",
+      "createdAt": "2025-12-01T21:26:31.367Z",
+      "isCompleted": false,
+      "deadline": "2026-01-20T23:59:59.000Z"
+    },
+    {
+      "id": "692e08075ed4eb7ec4d43259",
+      "title": "Seed Course 4 - Task 3",
+      "description": "Description for Seed Course 4 - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fd5ed4eb7ec4d43237",
+      "createdAt": "2025-12-01T21:26:31.661Z",
+      "isCompleted": false,
+      "deadline": "2026-01-22T23:59:59.000Z"
+    },
+    {
+      "id": "692e08085ed4eb7ec4d4325a",
+      "title": "Seed Course 4 - Task 4",
+      "description": "Description for Seed Course 4 - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fe5ed4eb7ec4d43238",
+      "createdAt": "2025-12-01T21:26:31.945Z",
+      "isCompleted": false,
+      "deadline": "2026-01-25T23:59:59.000Z"
+    },
+    {
+      "id": "692e08085ed4eb7ec4d4325b",
+      "title": "Seed Course 4 - Task 5",
+      "description": "Description for Seed Course 4 - Task 5",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fe5ed4eb7ec4d43239",
+      "createdAt": "2025-12-01T21:26:32.570Z",
+      "isCompleted": false,
+      "deadline": "2026-01-28T23:59:59.000Z"
+    },
+    {
+      "id": "692e08095ed4eb7ec4d4325c",
+      "title": "Seed Course 4 - Task 6",
+      "description": "Description for Seed Course 4 - Task 6",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fe5ed4eb7ec4d4323a",
+      "createdAt": "2025-12-01T21:26:33.153Z",
+      "isCompleted": false,
+      "deadline": "2026-02-01T23:59:59.000Z"
+    },
+    {
+      "id": "692e08095ed4eb7ec4d4325d",
+      "title": "Seed Course 5 - Task 1",
+      "description": "Description for Seed Course 5 - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07ff5ed4eb7ec4d4323d",
+      "createdAt": "2025-12-01T21:26:33.753Z",
+      "isCompleted": true,
+      "deadline": "2026-02-03T23:59:59.000Z"
+    },
+    {
+      "id": "692e080a5ed4eb7ec4d4325e",
+      "title": "Seed Course 5 - Task 2",
+      "description": "Description for Seed Course 5 - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07ff5ed4eb7ec4d4323e",
+      "createdAt": "2025-12-01T21:26:34.030Z",
+      "isCompleted": false,
+      "deadline": "2026-02-05T23:59:59.000Z"
+    },
+    {
+      "id": "692e080a5ed4eb7ec4d4325f",
+      "title": "Seed Course 5 - Task 3",
+      "description": "Description for Seed Course 5 - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07ff5ed4eb7ec4d4323f",
+      "createdAt": "2025-12-01T21:26:34.316Z",
+      "isCompleted": false,
+      "deadline": "2026-02-08T23:59:59.000Z"
+    },
+    {
+      "id": "692e080a5ed4eb7ec4d43260",
+      "title": "Seed Course 5 - Task 4",
+      "description": "Description for Seed Course 5 - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08005ed4eb7ec4d43240",
+      "createdAt": "2025-12-01T21:26:34.672Z",
+      "isCompleted": true,
+      "deadline": "2026-02-10T23:59:59.000Z"
+    },
+    {
+      "id": "692e080b5ed4eb7ec4d43261",
+      "title": "Seed Course 6 - Task 1",
+      "description": "Description for Seed Course 6 - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08005ed4eb7ec4d43243",
+      "createdAt": "2025-12-01T21:26:34.980Z",
+      "isCompleted": false,
+      "deadline": "2026-02-12T23:59:59.000Z"
+    },
+    {
+      "id": "692e080b5ed4eb7ec4d43262",
+      "title": "Seed Course 6 - Task 2",
+      "description": "Description for Seed Course 6 - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08015ed4eb7ec4d43244",
+      "createdAt": "2025-12-01T21:26:35.257Z",
+      "isCompleted": false,
+      "deadline": "2026-02-15T23:59:59.000Z"
+    },
+    {
+      "id": "692e080b5ed4eb7ec4d43263",
+      "title": "Seed Course 6 - Task 3",
+      "description": "Description for Seed Course 6 - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08015ed4eb7ec4d43245",
+      "createdAt": "2025-12-01T21:26:35.546Z",
+      "isCompleted": false,
+      "deadline": "2026-02-18T23:59:59.000Z"
+    },
+    {
+      "id": "692e080c5ed4eb7ec4d43264",
+      "title": "Seed Course 6 - Task 4",
+      "description": "Description for Seed Course 6 - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08025ed4eb7ec4d43246",
+      "createdAt": "2025-12-01T21:26:36.123Z",
+      "isCompleted": false,
+      "deadline": "2026-02-20T23:59:59.000Z"
+    }
+  ],
+  "userCourses": [
+    {
+      "id": "692e07f55ed4eb7ec4d4321e",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07f55ed4eb7ec4d4321d",
+      "isCompleted": false,
+      "progress": 62,
+      "enrolledAt": "2025-12-01T21:26:13.867Z",
+      "completedAt": null,
+      "course": {
+        "id": "692e07f55ed4eb7ec4d4321d",
+        "title": "Seed Course 1",
+        "description": "This is the description for Seed Course 1",
+        "createdAt": "2025-12-01T21:26:13.666Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 10,
+        "code": "",
+        "tasks": [
+          {
+            "id": "692e07f65ed4eb7ec4d4321f",
+            "title": "Seed Course 1 - Task 1",
+            "description": "Description for Seed Course 1 - Task 1",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:14.091Z",
+            "isCompleted": false,
+            "deadline": "2025-12-05T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f65ed4eb7ec4d43220",
+            "title": "Seed Course 1 - Task 2",
+            "description": "Description for Seed Course 1 - Task 2",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:14.441Z",
+            "isCompleted": false,
+            "deadline": "2025-12-08T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f65ed4eb7ec4d43221",
+            "title": "Seed Course 1 - Task 3",
+            "description": "Description for Seed Course 1 - Task 3",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:14.709Z",
+            "isCompleted": false,
+            "deadline": "2025-12-10T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f75ed4eb7ec4d43222",
+            "title": "Seed Course 1 - Task 4",
+            "description": "Description for Seed Course 1 - Task 4",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:14.995Z",
+            "isCompleted": false,
+            "deadline": "2025-12-12T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f75ed4eb7ec4d43223",
+            "title": "Seed Course 1 - Task 5",
+            "description": "Description for Seed Course 1 - Task 5",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:15.340Z",
+            "isCompleted": false,
+            "deadline": "2025-12-15T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f75ed4eb7ec4d43224",
+            "title": "Seed Course 1 - Task 6",
+            "description": "Description for Seed Course 1 - Task 6",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:15.675Z",
+            "isCompleted": false,
+            "deadline": "2025-12-18T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "692e07f85ed4eb7ec4d43226",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07f75ed4eb7ec4d43225",
+      "isCompleted": true,
+      "progress": 100,
+      "enrolledAt": "2025-12-01T21:26:16.162Z",
+      "completedAt": "2025-12-01T21:26:16.153Z",
+      "course": {
+        "id": "692e07f75ed4eb7ec4d43225",
+        "title": "Seed Course 2",
+        "description": "This is the description for Seed Course 2",
+        "createdAt": "2025-12-01T21:26:15.945Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 12,
+        "code": "",
+        "tasks": [
+          {
+            "id": "692e07f85ed4eb7ec4d43227",
+            "title": "Seed Course 2 - Task 1",
+            "description": "Description for Seed Course 2 - Task 1",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:16.362Z",
+            "isCompleted": false,
+            "deadline": "2025-12-20T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f95ed4eb7ec4d43228",
+            "title": "Seed Course 2 - Task 2",
+            "description": "Description for Seed Course 2 - Task 2",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:17.015Z",
+            "isCompleted": false,
+            "deadline": "2025-12-22T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f95ed4eb7ec4d43229",
+            "title": "Seed Course 2 - Task 3",
+            "description": "Description for Seed Course 2 - Task 3",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:17.287Z",
+            "isCompleted": false,
+            "deadline": "2025-12-25T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f95ed4eb7ec4d4322a",
+            "title": "Seed Course 2 - Task 4",
+            "description": "Description for Seed Course 2 - Task 4",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:17.574Z",
+            "isCompleted": false,
+            "deadline": "2025-12-28T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fa5ed4eb7ec4d4322b",
+            "title": "Seed Course 2 - Task 5",
+            "description": "Description for Seed Course 2 - Task 5",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:18.723Z",
+            "isCompleted": false,
+            "deadline": "2026-01-02T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fb5ed4eb7ec4d4322c",
+            "title": "Seed Course 2 - Task 6",
+            "description": "Description for Seed Course 2 - Task 6",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:18.991Z",
+            "isCompleted": false,
+            "deadline": "2026-01-05T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "692e07fb5ed4eb7ec4d4322e",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07fb5ed4eb7ec4d4322d",
+      "isCompleted": true,
+      "progress": 100,
+      "enrolledAt": "2025-12-01T21:26:19.471Z",
+      "completedAt": "2025-12-01T21:26:19.470Z",
+      "course": {
+        "id": "692e07fb5ed4eb7ec4d4322d",
+        "title": "Seed Course 3",
+        "description": "This is the description for Seed Course 3",
+        "createdAt": "2025-12-01T21:26:19.266Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 8,
+        "code": "",
+        "tasks": [
+          {
+            "id": "692e07fb5ed4eb7ec4d4322f",
+            "title": "Seed Course 3 - Task 1",
+            "description": "Description for Seed Course 3 - Task 1",
+            "courseID": "692e07fb5ed4eb7ec4d4322d",
+            "createdAt": "2025-12-01T21:26:19.680Z",
+            "isCompleted": false,
+            "deadline": "2026-01-08T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fc5ed4eb7ec4d43230",
+            "title": "Seed Course 3 - Task 2",
+            "description": "Description for Seed Course 3 - Task 2",
+            "courseID": "692e07fb5ed4eb7ec4d4322d",
+            "createdAt": "2025-12-01T21:26:19.952Z",
+            "isCompleted": false,
+            "deadline": "2026-01-10T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fc5ed4eb7ec4d43231",
+            "title": "Seed Course 3 - Task 3",
+            "description": "Description for Seed Course 3 - Task 3",
+            "courseID": "692e07fb5ed4eb7ec4d4322d",
+            "createdAt": "2025-12-01T21:26:20.219Z",
+            "isCompleted": false,
+            "deadline": "2026-01-12T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fc5ed4eb7ec4d43232",
+            "title": "Seed Course 3 - Task 4",
+            "description": "Description for Seed Course 3 - Task 4",
+            "courseID": "692e07fb5ed4eb7ec4d4322d",
+            "createdAt": "2025-12-01T21:26:20.502Z",
+            "isCompleted": false,
+            "deadline": "2026-01-15T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "692e07fd5ed4eb7ec4d43234",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07fc5ed4eb7ec4d43233",
+      "isCompleted": true,
+      "progress": 100,
+      "enrolledAt": "2025-12-01T21:26:21.026Z",
+      "completedAt": "2025-12-01T21:26:21.025Z",
+      "course": {
+        "id": "692e07fc5ed4eb7ec4d43233",
+        "title": "Seed Course 4",
+        "description": "This is the description for Seed Course 4",
+        "createdAt": "2025-12-01T21:26:20.819Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 15,
+        "code": "",
+        "tasks": [
+          {
+            "id": "692e07fd5ed4eb7ec4d43235",
+            "title": "Seed Course 4 - Task 1",
+            "description": "Description for Seed Course 4 - Task 1",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:21.247Z",
+            "isCompleted": false,
+            "deadline": "2026-01-18T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fd5ed4eb7ec4d43236",
+            "title": "Seed Course 4 - Task 2",
+            "description": "Description for Seed Course 4 - Task 2",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:21.596Z",
+            "isCompleted": false,
+            "deadline": "2026-01-20T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fd5ed4eb7ec4d43237",
+            "title": "Seed Course 4 - Task 3",
+            "description": "Description for Seed Course 4 - Task 3",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:21.875Z",
+            "isCompleted": false,
+            "deadline": "2026-01-22T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fe5ed4eb7ec4d43238",
+            "title": "Seed Course 4 - Task 4",
+            "description": "Description for Seed Course 4 - Task 4",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:22.146Z",
+            "isCompleted": false,
+            "deadline": "2026-01-25T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fe5ed4eb7ec4d43239",
+            "title": "Seed Course 4 - Task 5",
+            "description": "Description for Seed Course 4 - Task 5",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:22.416Z",
+            "isCompleted": false,
+            "deadline": "2026-01-28T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fe5ed4eb7ec4d4323a",
+            "title": "Seed Course 4 - Task 6",
+            "description": "Description for Seed Course 4 - Task 6",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:22.686Z",
+            "isCompleted": false,
+            "deadline": "2026-02-01T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "692e07ff5ed4eb7ec4d4323c",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07fe5ed4eb7ec4d4323b",
+      "isCompleted": true,
+      "progress": 100,
+      "enrolledAt": "2025-12-01T21:26:23.182Z",
+      "completedAt": "2025-12-01T21:26:23.180Z",
+      "course": {
+        "id": "692e07fe5ed4eb7ec4d4323b",
+        "title": "Seed Course 5",
+        "description": "This is the description for Seed Course 5",
+        "createdAt": "2025-12-01T21:26:22.979Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 9,
+        "code": "",
+        "tasks": [
+          {
+            "id": "692e07ff5ed4eb7ec4d4323d",
+            "title": "Seed Course 5 - Task 1",
+            "description": "Description for Seed Course 5 - Task 1",
+            "courseID": "692e07fe5ed4eb7ec4d4323b",
+            "createdAt": "2025-12-01T21:26:23.385Z",
+            "isCompleted": false,
+            "deadline": "2026-02-03T23:59:59.000Z"
+          },
+          {
+            "id": "692e07ff5ed4eb7ec4d4323e",
+            "title": "Seed Course 5 - Task 2",
+            "description": "Description for Seed Course 5 - Task 2",
+            "courseID": "692e07fe5ed4eb7ec4d4323b",
+            "createdAt": "2025-12-01T21:26:23.655Z",
+            "isCompleted": false,
+            "deadline": "2026-02-05T23:59:59.000Z"
+          },
+          {
+            "id": "692e07ff5ed4eb7ec4d4323f",
+            "title": "Seed Course 5 - Task 3",
+            "description": "Description for Seed Course 5 - Task 3",
+            "courseID": "692e07fe5ed4eb7ec4d4323b",
+            "createdAt": "2025-12-01T21:26:23.925Z",
+            "isCompleted": false,
+            "deadline": "2026-02-08T23:59:59.000Z"
+          },
+          {
+            "id": "692e08005ed4eb7ec4d43240",
+            "title": "Seed Course 5 - Task 4",
+            "description": "Description for Seed Course 5 - Task 4",
+            "courseID": "692e07fe5ed4eb7ec4d4323b",
+            "createdAt": "2025-12-01T21:26:24.196Z",
+            "isCompleted": false,
+            "deadline": "2026-02-10T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "692e08005ed4eb7ec4d43242",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e08005ed4eb7ec4d43241",
+      "isCompleted": false,
+      "progress": 67,
+      "enrolledAt": "2025-12-01T21:26:24.672Z",
+      "completedAt": null,
+      "course": {
+        "id": "692e08005ed4eb7ec4d43241",
+        "title": "Seed Course 6",
+        "description": "This is the description for Seed Course 6",
+        "createdAt": "2025-12-01T21:26:24.465Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 11,
+        "code": "",
+        "tasks": [
+          {
+            "id": "692e08005ed4eb7ec4d43243",
+            "title": "Seed Course 6 - Task 1",
+            "description": "Description for Seed Course 6 - Task 1",
+            "courseID": "692e08005ed4eb7ec4d43241",
+            "createdAt": "2025-12-01T21:26:24.876Z",
+            "isCompleted": false,
+            "deadline": "2026-02-12T23:59:59.000Z"
+          },
+          {
+            "id": "692e08015ed4eb7ec4d43244",
+            "title": "Seed Course 6 - Task 2",
+            "description": "Description for Seed Course 6 - Task 2",
+            "courseID": "692e08005ed4eb7ec4d43241",
+            "createdAt": "2025-12-01T21:26:25.157Z",
+            "isCompleted": false,
+            "deadline": "2026-02-15T23:59:59.000Z"
+          },
+          {
+            "id": "692e08015ed4eb7ec4d43245",
+            "title": "Seed Course 6 - Task 3",
+            "description": "Description for Seed Course 6 - Task 3",
+            "courseID": "692e08005ed4eb7ec4d43241",
+            "createdAt": "2025-12-01T21:26:25.752Z",
+            "isCompleted": false,
+            "deadline": "2026-02-18T23:59:59.000Z"
+          },
+          {
+            "id": "692e08025ed4eb7ec4d43246",
+            "title": "Seed Course 6 - Task 4",
+            "description": "Description for Seed Course 6 - Task 4",
+            "courseID": "692e08005ed4eb7ec4d43241",
+            "createdAt": "2025-12-01T21:26:26.028Z",
+            "isCompleted": false,
+            "deadline": "2026-02-20T23:59:59.000Z"
+          }
+        ]
+      }
+    }
+  ]
+}

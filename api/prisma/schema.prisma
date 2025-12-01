@@ -19,20 +19,13 @@ model User {
   password  String
   avatar    String?
   createdAt DateTime @default(now())
-  // posts     Post[]
-  // savedPosts SavedPost[]
-  // chats      Chat[]      @relation(fields: [chatIDs], references: [id])
-  // chatIDs    String[]    @db.ObjectId
   isAdmin   Boolean  @default(false)
-
-  //added 
   level     Int      @default(0)
-  courses   Course[]  @relation(fields: [courseIDs], references: [id])
-  courseIDs String[]  @db.ObjectId
-
+  userCourses UserCourse[]  // relation to courses through join table
   timetable String[] @default([]) 
-  MyTasks   MyTask[]  
-
+  MyTasks   MyTask[]  // user self created tasks , tasks published by the representive
+  streak     Int      @default(0) 
+  stackFinishedTasks   String[] @default([])
 }
 
 model MyTask {
@@ -42,38 +35,58 @@ model MyTask {
   user        User     @relation(fields: [userID], references: [id])
   userID    String   @db.ObjectId
 
+  taskId    String?   
   createdAt DateTime @default(now())
   isCompleted Boolean @default(false)
+  deadline    DateTime
 }
 
 model Task {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   title     String
   description String
-  courses   Course[]  @relation(fields: [courseIDs], references: [id])
-  courseIDs String[]  @db.ObjectId
+  course   Course  @relation(fields: [courseID], references: [id])
+  courseID String  @db.ObjectId
   createdAt DateTime @default(now())
   isCompleted Boolean @default(false)
+  deadline    DateTime
+
+}
+
+// Join table to track user enrollment and progress in courses
+model UserCourse {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String   @db.ObjectId
+  course    Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  courseId  String   @db.ObjectId
+  isCompleted Boolean @default(false)
+  progress    Int     @default(0) // percentage or number of completed tasks
+  enrolledAt  DateTime @default(now())
+  completedAt DateTime?
+  
+  @@unique([userId, courseId]) // prevent duplicate enrollments
 }
 
 model Course {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   title     String
   description String
-  users     User[]   @relation(fields: [userIDs], references: [id])
-  userIDs   String[] @db.ObjectId
+  userCourses UserCourse[]  // relation to users through join table
   createdAt DateTime @default(now())
   comments  String[] @default([])
   materials  Material[] @relation(fields: [materialIDs], references: [id])
   materialIDs String[] @db.ObjectId
-  tasks     Task[]   @relation(fields: [taskIDs], references: [id])
-  taskIDs   String[] @db.ObjectId
+  tasks     Task[]   
   announcements Announcement[]
   lectures  Lecture[]
   exams     Exams[]
   labs      Labs[]
   sheets    Sheets[]
   references References[]
+  level     Int      @default(0)
+  totalTasks Int      @default(0)
+  code      String    @default("")
 }
 
 model Material {
@@ -102,6 +115,7 @@ model Lecture {
   createdAt DateTime @default(now())
   course   Course  @relation(fields: [courseIDs], references: [id])
   courseIDs String  @db.ObjectId
+
 }
 
 model Exams {
