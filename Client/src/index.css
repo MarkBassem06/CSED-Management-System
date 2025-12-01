@@ -62,7 +62,8 @@
   }
 
   .card {
-    @apply bg-white dark:bg-[--color-surface-dark] rounded-xl border border-[--color-light-border] dark:border-[--color-border-dark] p-5;
+    @apply bg-[--color-background-dark] w-fit dark:bg-[--color-surface-dark] rounded-xl 
+    border border-[--color-primary-dark] dark:border-[--color-primary-dark] p-5;
   }
 
   .label {
