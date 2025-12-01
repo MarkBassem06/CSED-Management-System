@@ -31,10 +31,20 @@ export default function Courses() {
       level: 1,
       iscompleted: false,
       numberOfMaterials: 8,
-      finishedMaterials: 4,
+      finishedMaterials: 0,
     },
     {
       id: 4,
+      title: "Digital Logic Design 2",
+      description: "Boolean algebra, logic gates, and Advanced circuit design.",
+      code: "CSE102",
+      level: 1,
+      iscompleted: false,
+      numberOfMaterials: 8,
+      finishedMaterials: 4,
+    },
+    {
+      id: 5,
       title: "Data Structures",
       description: "Stacks, queues, trees, and graphs implementation.",
       code: "CSE201",
@@ -46,9 +56,9 @@ export default function Courses() {
   ];
 
   return (
+    
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center sm:justify-items-start">
       
-      {/* 2. Map through the array */}
       {coursesData.map((course) => (
         <CoursCard
           key={course.id} 

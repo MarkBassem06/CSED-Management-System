@@ -38,6 +38,11 @@ export default function CoursCard(props: CoursCardProps) {
            Completed
           </p>
         )}
+        {(props.finishedMaterials>0)&&!props.iscompleted && (
+          <p className="absolute top-0 right-0 mb-4  bg-[var(--color-warning)] text-[var(--color-text-dark)] text-xs font-semibold  rounded-lg p-2 m-6 mx-3">
+           In Progress
+          </p>
+        )}
 
         <h3 className="text-lg font-semibold text-[var(--color-primary-dark)]">
             {props.title} 
