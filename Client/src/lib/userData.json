@@ -1,0 +1,728 @@
+{
+  "id": "692e07f55ed4eb7ec4d4321c",
+  "username": "seed_user",
+  "email": "seed.user@example.com",
+  "password": "$2b$10$7miqTvy0LwNu0VcvuLiwm.iH3Xq/ZY6SgO7PMtlQN7DWXfti7i93a",
+  "avatar": null,
+  "createdAt": "2025-12-01T21:26:12.679Z",
+  "isAdmin": false,
+  "level": 3,
+  "timetable": [],
+  "streak": 12,
+  "stackFinishedTasks": [
+    "692e08025ed4eb7ec4d43247",
+    "692e08055ed4eb7ec4d43250",
+    "692e08055ed4eb7ec4d43252",
+    "692e08065ed4eb7ec4d43254",
+    "692e08065ed4eb7ec4d43255",
+    "692e08095ed4eb7ec4d4325d",
+    "692e080a5ed4eb7ec4d43260"
+  ],
+  "MyTasks": [
+    {
+      "id": "692e08025ed4eb7ec4d43247",
+      "title": "Computer Organization - Task 1",
+      "description": "Description for Computer Organization - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f65ed4eb7ec4d4321f",
+      "createdAt": "2025-12-01T21:26:26.615Z",
+      "isCompleted": true,
+      "deadline": "2025-12-05T23:59:59.000Z"
+    },
+    {
+      "id": "692e08025ed4eb7ec4d43248",
+      "title": "Computer Organization - Task 2",
+      "description": "Description for Computer Organization - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f65ed4eb7ec4d43220",
+      "createdAt": "2025-12-01T21:26:26.902Z",
+      "isCompleted": false,
+      "deadline": "2025-10-08T23:56:59.000Z"
+    },
+    {
+      "id": "692e08035ed4eb7ec4d43249",
+      "title": "Computer Organization - Task 3",
+      "description": "Description for Computer Organization - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f65ed4eb7ec4d43221",
+      "createdAt": "2025-12-01T21:26:27.208Z",
+      "isCompleted": false,
+      "deadline": "2025-12-10T23:58:59.000Z"
+    },
+    {
+      "id": "692e08035ed4eb7ec4d4324a",
+      "title": "Computer Organization - Task 4",
+      "description": "Description for Computer Organization - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f75ed4eb7ec4d43222",
+      "createdAt": "2025-12-01T21:26:27.490Z",
+      "isCompleted": false,
+      "deadline": "2025-12-12T23:59:59.000Z"
+    },
+    {
+      "id": "692e08035ed4eb7ec4d4324b",
+      "title": "Computer Organization - Task 5",
+      "description": "Description for Computer Organization - Task 5",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f75ed4eb7ec4d43223",
+      "createdAt": "2025-12-01T21:26:27.758Z",
+      "isCompleted": false,
+      "deadline": "2025-12-15T23:59:59.000Z"
+    },
+    {
+      "id": "692e08045ed4eb7ec4d4324c",
+      "title": "Computer Organization - Task 6",
+      "description": "Description for Computer Organization - Task 6",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f75ed4eb7ec4d43224",
+      "createdAt": "2025-12-01T21:26:28.038Z",
+      "isCompleted": false,
+      "deadline": "2025-12-18T23:59:59.000Z"
+    },
+    {
+      "id": "692e08045ed4eb7ec4d4324d",
+      "title": "HCI - Task 1",
+      "description": "Description for HCI - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f85ed4eb7ec4d43227",
+      "createdAt": "2025-12-01T21:26:28.321Z",
+      "isCompleted": false,
+      "deadline": "2025-12-20T23:59:59.000Z"
+    },
+    {
+      "id": "692e08045ed4eb7ec4d4324e",
+      "title": "HCI - Task 2",
+      "description": "Description for HCI - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f95ed4eb7ec4d43228",
+      "createdAt": "2025-12-01T21:26:28.592Z",
+      "isCompleted": false,
+      "deadline": "2025-12-22T23:59:59.000Z"
+    },
+    {
+      "id": "692e08045ed4eb7ec4d4324f",
+      "title": "HCI - Task 3",
+      "description": "Description for HCI - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f95ed4eb7ec4d43229",
+      "createdAt": "2025-12-01T21:26:28.863Z",
+      "isCompleted": false,
+      "deadline": "2025-12-25T23:59:59.000Z"
+    },
+    {
+      "id": "692e08055ed4eb7ec4d43250",
+      "title": "HCI - Task 4",
+      "description": "Description for HCI - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07f95ed4eb7ec4d4322a",
+      "createdAt": "2025-12-01T21:26:29.139Z",
+      "isCompleted": false,
+      "deadline": "2025-12-28T23:59:59.000Z"
+    },
+    {
+      "id": "692e08055ed4eb7ec4d43251",
+      "title": "HCI - Task 5",
+      "description": "Description for HCI - Task 5",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fa5ed4eb7ec4d4322b",
+      "createdAt": "2025-12-01T21:26:29.411Z",
+      "isCompleted": false,
+      "deadline": "2026-01-02T23:59:59.000Z"
+    },
+    {
+      "id": "692e08055ed4eb7ec4d43252",
+      "title": "HCI - Task 6",
+      "description": "Description for HCI - Task 6",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fb5ed4eb7ec4d4322c",
+      "createdAt": "2025-12-01T21:26:29.679Z",
+      "isCompleted": false,
+      "deadline": "2026-01-05T23:59:59.000Z"
+    },
+    {
+      "id": "692e08065ed4eb7ec4d43253",
+      "title": "Numerical Computing - Task 1",
+      "description": "Description for Numerical Computing - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fb5ed4eb7ec4d4322f",
+      "createdAt": "2025-12-01T21:26:29.999Z",
+      "isCompleted": false,
+      "deadline": "2026-01-08T23:59:59.000Z"
+    },
+    {
+      "id": "692e08065ed4eb7ec4d43254",
+      "title": "Numerical Computing - Task 2",
+      "description": "Description for Numerical Computing - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fc5ed4eb7ec4d43230",
+      "createdAt": "2025-12-01T21:26:30.273Z",
+      "isCompleted": false,
+      "deadline": "2026-01-10T23:59:59.000Z"
+    },
+    {
+      "id": "692e08065ed4eb7ec4d43255",
+      "title": "Numerical Computing - Task 3",
+      "description": "Description for Numerical Computing - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fc5ed4eb7ec4d43231",
+      "createdAt": "2025-12-01T21:26:30.551Z",
+      "isCompleted": false,
+      "deadline": "2026-01-12T23:59:59.000Z"
+    },
+    {
+      "id": "692e08065ed4eb7ec4d43256",
+      "title": "Numerical Computing - Task 4",
+      "description": "Description for Numerical Computing - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fc5ed4eb7ec4d43232",
+      "createdAt": "2025-12-01T21:26:30.825Z",
+      "isCompleted": false,
+      "deadline": "2026-01-15T23:59:59.000Z"
+    },
+    {
+      "id": "692e08075ed4eb7ec4d43257",
+      "title": "Discerte Structures - Task 1",
+      "description": "Description for Discerte Structures - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fd5ed4eb7ec4d43235",
+      "createdAt": "2025-12-01T21:26:31.096Z",
+      "isCompleted": false,
+      "deadline": "2026-01-18T23:59:59.000Z"
+    },
+    {
+      "id": "692e08075ed4eb7ec4d43258",
+      "title": "Discerte Structures - Task 2",
+      "description": "Description for Discerte Structures - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fd5ed4eb7ec4d43236",
+      "createdAt": "2025-12-01T21:26:31.367Z",
+      "isCompleted": false,
+      "deadline": "2026-01-20T23:59:59.000Z"
+    },
+    {
+      "id": "692e08075ed4eb7ec4d43259",
+      "title": "Discerte Structures - Task 3",
+      "description": "Description for Discerte Structures - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fd5ed4eb7ec4d43237",
+      "createdAt": "2025-12-01T21:26:31.661Z",
+      "isCompleted": false,
+      "deadline": "2026-01-22T23:59:59.000Z"
+    },
+    {
+      "id": "692e08085ed4eb7ec4d4325a",
+      "title": "Discerte Structures - Task 4",
+      "description": "Description for Discerte Structures - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fe5ed4eb7ec4d43238",
+      "createdAt": "2025-12-01T21:26:31.945Z",
+      "isCompleted": false,
+      "deadline": "2026-01-25T23:59:59.000Z"
+    },
+    {
+      "id": "692e08085ed4eb7ec4d4325b",
+      "title": "Discerte Structures - Task 5",
+      "description": "Description for Discerte Structures - Task 5",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fe5ed4eb7ec4d43239",
+      "createdAt": "2025-12-01T21:26:32.570Z",
+      "isCompleted": false,
+      "deadline": "2026-01-28T23:59:59.000Z"
+    },
+    {
+      "id": "692e08095ed4eb7ec4d4325c",
+      "title": "Discerte Structures - Task 6",
+      "description": "Description for Discerte Structures - Task 6",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07fe5ed4eb7ec4d4323a",
+      "createdAt": "2025-12-01T21:26:33.153Z",
+      "isCompleted": true,
+      "deadline": "2026-02-01T23:59:59.000Z"
+    },
+    {
+      "id": "692e08095ed4eb7ec4d4325d",
+      "title": "Programming 2 - Task 1",
+      "description": "Description for Programming 2 - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07ff5ed4eb7ec4d4323d",
+      "createdAt": "2025-12-01T21:26:33.753Z",
+      "isCompleted": true,
+      "deadline": "2026-02-03T23:59:59.000Z"
+    },
+    {
+      "id": "692e080a5ed4eb7ec4d4325e",
+      "title": "Programming 2 - Task 2",
+      "description": "Description for Programming 2 - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07ff5ed4eb7ec4d4323e",
+      "createdAt": "2025-12-01T21:26:34.030Z",
+      "isCompleted": true,
+      "deadline": "2026-02-05T23:59:59.000Z"
+    },
+    {
+      "id": "692e080a5ed4eb7ec4d4325f",
+      "title": "Programming 2 - Task 3",
+      "description": "Description for Programming 2 - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e07ff5ed4eb7ec4d4323f",
+      "createdAt": "2025-12-01T21:26:34.316Z",
+      "isCompleted": true,
+      "deadline": "2026-02-08T23:59:59.000Z"
+    },
+    {
+      "id": "692e080a5ed4eb7ec4d43260",
+      "title": "Programming 2 - Task 4",
+      "description": "Description for Programming 2 - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08005ed4eb7ec4d43240",
+      "createdAt": "2025-12-01T21:26:34.672Z",
+      "isCompleted": true,
+      "deadline": "2026-02-10T23:59:59.000Z"
+    },
+    {
+      "id": "692e080b5ed4eb7ec4d43261",
+      "title": "Communication Skills - Task 1",
+      "description": "Description for Communication Skills - Task 1",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08005ed4eb7ec4d43243",
+      "createdAt": "2025-12-01T21:26:34.980Z",
+      "isCompleted": true,
+      "deadline": "2026-02-12T23:59:59.000Z"
+    },
+    {
+      "id": "692e080b5ed4eb7ec4d43262",
+      "title": "Communication Skills - Task 2",
+      "description": "Description for Communication Skills - Task 2",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08015ed4eb7ec4d43244",
+      "createdAt": "2025-12-01T21:26:35.257Z",
+      "isCompleted": true,
+      "deadline": "2026-02-15T23:59:59.000Z"
+    },
+    {
+      "id": "692e080b5ed4eb7ec4d43263",
+      "title": "Communication Skills - Task 3",
+      "description": "Description for Communication Skills - Task 3",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08015ed4eb7ec4d43245",
+      "createdAt": "2025-12-01T21:26:35.546Z",
+      "isCompleted": true,
+      "deadline": "2026-02-18T23:59:59.000Z"
+    },
+    {
+      "id": "692e080c5ed4eb7ec4d43264",
+      "title": "Communication Skills - Task 4",
+      "description": "Description for Communication Skills - Task 4",
+      "userID": "692e07f55ed4eb7ec4d4321c",
+      "taskId": "692e08025ed4eb7ec4d43246",
+      "createdAt": "2025-12-01T21:26:36.123Z",
+      "isCompleted": false,
+      "deadline": "2026-02-20T23:59:59.000Z"
+    }
+  ],
+  "userCourses": [
+    {
+      "id": "692e07f55ed4eb7ec4d4321e",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07f55ed4eb7ec4d4321d",
+      "isCompleted": false,
+      "progress": 62,
+      "enrolledAt": "2025-12-01T21:26:13.867Z",
+      "completedAt": null,
+      "course": {
+        "id": "692e07f55ed4eb7ec4d4321d",
+        "title": "Computer Organization",
+        "description": "This is the description for Computer Organization",
+        "createdAt": "2025-12-01T21:26:13.666Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 10,
+        "code": "CSE201",
+        "tasks": [
+          {
+            "id": "692e07f65ed4eb7ec4d4321f",
+            "title": "Computer Organization - Task 1",
+            "description": "Description for Computer Organization - Task 1",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:14.091Z",
+            "isCompleted": true,
+            "deadline": "2025-12-05T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f65ed4eb7ec4d43220",
+            "title": "Computer Organization - Task 2",
+            "description": "Description for Computer Organization - Task 2",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:14.441Z",
+            "isCompleted": false,
+            "deadline": "2025-11-08T22:57:59.000Z"
+          },
+          {
+            "id": "692e07f65ed4eb7ec4d43221",
+            "title": "Computer Organization - Task 3",
+            "description": "Description for Computer Organization - Task 3",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:14.709Z",
+            "isCompleted": false,
+            "deadline": "2025-12-10T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f75ed4eb7ec4d43222",
+            "title": "Computer Organization - Task 4",
+            "description": "Description for Computer Organization - Task 4",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:14.995Z",
+            "isCompleted": false,
+            "deadline": "2025-12-12T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f75ed4eb7ec4d43223",
+            "title": "Computer Organization - Task 5",
+            "description": "Description for Computer Organization - Task 5",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:15.340Z",
+            "isCompleted": false,
+            "deadline": "2025-12-15T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f75ed4eb7ec4d43224",
+            "title": "Computer Organization - Task 6",
+            "description": "Description for Computer Organization - Task 6",
+            "courseID": "692e07f55ed4eb7ec4d4321d",
+            "createdAt": "2025-12-01T21:26:15.675Z",
+            "isCompleted": true,
+            "deadline": "2025-12-18T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "692e07f85ed4eb7ec4d43226",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07f75ed4eb7ec4d43225",
+      "isCompleted": true,
+      "progress": 93,
+      "enrolledAt": "2025-12-01T21:26:16.162Z",
+      "completedAt": "2025-12-01T21:26:16.153Z",
+      "course": {
+        "id": "692e07f75ed4eb7ec4d43225",
+        "title": "HCI",
+        "description": "This is the description for HCI",
+        "createdAt": "2025-12-01T21:26:15.945Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 12,
+        "code": "CSE202",
+        "tasks": [
+          {
+            "id": "692e07f85ed4eb7ec4d43227",
+            "title": "HCI - Task 1",
+            "description": "Description for HCI - Task 1",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:16.362Z",
+            "isCompleted": false,
+            "deadline": "2025-12-20T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f95ed4eb7ec4d43228",
+            "title": "HCI - Task 2",
+            "description": "Description for HCI - Task 2",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:17.015Z",
+            "isCompleted": true,
+            "deadline": "2025-12-22T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f95ed4eb7ec4d43229",
+            "title": "HCI - Task 3",
+            "description": "Description for HCI - Task 3",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:17.287Z",
+            "isCompleted": false,
+            "deadline": "2025-12-25T23:59:59.000Z"
+          },
+          {
+            "id": "692e07f95ed4eb7ec4d4322a",
+            "title": "HCI - Task 4",
+            "description": "Description for HCI - Task 4",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:17.574Z",
+            "isCompleted": false,
+            "deadline": "2025-12-28T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fa5ed4eb7ec4d4322b",
+            "title": "HCI - Task 5",
+            "description": "Description for HCI - Task 5",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:18.723Z",
+            "isCompleted": false,
+            "deadline": "2026-01-02T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fb5ed4eb7ec4d4322c",
+            "title": "HCI - Task 6",
+            "description": "Description for HCI - Task 6",
+            "courseID": "692e07f75ed4eb7ec4d43225",
+            "createdAt": "2025-12-01T21:26:18.991Z",
+            "isCompleted": false,
+            "deadline": "2026-01-05T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "692e07fb5ed4eb7ec4d4322e",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07fb5ed4eb7ec4d4322d",
+      "isCompleted": true,
+      "progress": 33,
+      "enrolledAt": "2025-12-01T21:26:19.471Z",
+      "completedAt": "2025-12-01T21:26:19.470Z",
+      "course": {
+        "id": "692e07fb5ed4eb7ec4d4322d",
+        "title": "Numerical Computing",
+        "description": "This is the description for Numerical Computing",
+        "createdAt": "2025-12-01T21:26:19.266Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 8,
+        "code": "CSE203",
+        "tasks": [
+          {
+            "id": "692e07fb5ed4eb7ec4d4322f",
+            "title": "Numerical Computing - Task 1",
+            "description": "Description for Numerical Computing - Task 1",
+            "courseID": "692e07fb5ed4eb7ec4d4322d",
+            "createdAt": "2025-12-01T21:26:19.680Z",
+            "isCompleted": true,
+            "deadline": "2026-01-08T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fc5ed4eb7ec4d43230",
+            "title": "Numerical Computing - Task 2",
+            "description": "Description for Numerical Computing - Task 2",
+            "courseID": "692e07fb5ed4eb7ec4d4322d",
+            "createdAt": "2025-12-01T21:26:19.952Z",
+            "isCompleted": false,
+            "deadline": "2026-01-10T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fc5ed4eb7ec4d43231",
+            "title": "Numerical Computing - Task 3",
+            "description": "Description for Numerical Computing - Task 3",
+            "courseID": "692e07fb5ed4eb7ec4d4322d",
+            "createdAt": "2025-12-01T21:26:20.219Z",
+            "isCompleted": false,
+            "deadline": "2026-01-12T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fc5ed4eb7ec4d43232",
+            "title": "Numerical Computing - Task 4",
+            "description": "Description for Numerical Computing - Task 4",
+            "courseID": "692e07fb5ed4eb7ec4d4322d",
+            "createdAt": "2025-12-01T21:26:20.502Z",
+            "isCompleted": false,
+            "deadline": "2026-01-15T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "692e07fd5ed4eb7ec4d43234",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07fc5ed4eb7ec4d43233",
+      "isCompleted": true,
+      "progress": 65,
+      "enrolledAt": "2025-12-01T21:26:21.026Z",
+      "completedAt": "2025-12-01T21:26:21.025Z",
+      "course": {
+        "id": "692e07fc5ed4eb7ec4d43233",
+        "title": "Discerte Structures",
+        "description": "This is the description for Discerte Structures",
+        "createdAt": "2025-12-01T21:26:20.819Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 15,
+        "code": "CSE204",
+        "tasks": [
+          {
+            "id": "692e07fd5ed4eb7ec4d43235",
+            "title": "Discerte Structures - Task 1",
+            "description": "Description for Discerte Structures - Task 1",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:21.247Z",
+            "isCompleted": true,
+            "deadline": "2026-01-18T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fd5ed4eb7ec4d43236",
+            "title": "Discerte Structures - Task 2",
+            "description": "Description for Discerte Structures - Task 2",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:21.596Z",
+            "isCompleted": false,
+            "deadline": "2026-01-20T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fd5ed4eb7ec4d43237",
+            "title": "Discerte Structures - Task 3",
+            "description": "Description for Discerte Structures - Task 3",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:21.875Z",
+            "isCompleted": false,
+            "deadline": "2026-01-22T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fe5ed4eb7ec4d43238",
+            "title": "Discerte Structures - Task 4",
+            "description": "Description for Discerte Structures - Task 4",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:22.146Z",
+            "isCompleted": false,
+            "deadline": "2026-01-25T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fe5ed4eb7ec4d43239",
+            "title": "Discerte Structures - Task 5",
+            "description": "Description for Discerte Structures - Task 5",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:22.416Z",
+            "isCompleted": false,
+            "deadline": "2026-01-28T23:59:59.000Z"
+          },
+          {
+            "id": "692e07fe5ed4eb7ec4d4323a",
+            "title": "Discerte Structures - Task 6",
+            "description": "Description for Discerte Structures - Task 6",
+            "courseID": "692e07fc5ed4eb7ec4d43233",
+            "createdAt": "2025-12-01T21:26:22.686Z",
+            "isCompleted": false,
+            "deadline": "2026-02-01T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "692e07ff5ed4eb7ec4d4323c",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e07fe5ed4eb7ec4d4323b",
+      "isCompleted": true,
+      "progress": 100,
+      "enrolledAt": "2025-12-01T21:26:23.182Z",
+      "completedAt": "2025-12-01T21:26:23.180Z",
+      "course": {
+        "id": "692e07fe5ed4eb7ec4d4323b",
+        "title": "Programming 2",
+        "description": "This is the description for Programming 2",
+        "createdAt": "2025-12-01T21:26:22.979Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 9,
+        "code": "CSE205",
+        "tasks": [
+          {
+            "id": "692e07ff5ed4eb7ec4d4323d",
+            "title": "Programming 2 - Task 1",
+            "description": "Description for Programming 2 - Task 1",
+            "courseID": "692e07fe5ed4eb7ec4d4323b",
+            "createdAt": "2025-12-01T21:26:23.385Z",
+            "isCompleted": true,
+            "deadline": "2026-02-03T23:59:59.000Z"
+          },
+          {
+            "id": "692e07ff5ed4eb7ec4d4323e",
+            "title": "Programming 2 - Task 2",
+            "description": "Description for Programming 2 - Task 2",
+            "courseID": "692e07fe5ed4eb7ec4d4323b",
+            "createdAt": "2025-12-01T21:26:23.655Z",
+            "isCompleted": false,
+            "deadline": "2026-02-05T23:59:59.000Z"
+          },
+          {
+            "id": "692e07ff5ed4eb7ec4d4323f",
+            "title": "Programming 2 - Task 3",
+            "description": "Description for Programming 2 - Task 3",
+            "courseID": "692e07fe5ed4eb7ec4d4323b",
+            "createdAt": "2025-12-01T21:26:23.925Z",
+            "isCompleted": false,
+            "deadline": "2026-02-08T23:59:59.000Z"
+          },
+          {
+            "id": "692e08005ed4eb7ec4d43240",
+            "title": "Programming 2 - Task 4",
+            "description": "Description for Programming 2 - Task 4",
+            "courseID": "692e07fe5ed4eb7ec4d4323b",
+            "createdAt": "2025-12-01T21:26:24.196Z",
+            "isCompleted": false,
+            "deadline": "2026-02-10T23:59:59.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "692e08005ed4eb7ec4d43242",
+      "userId": "692e07f55ed4eb7ec4d4321c",
+      "courseId": "692e08005ed4eb7ec4d43241",
+      "isCompleted": false,
+      "progress": 67,
+      "enrolledAt": "2025-12-01T21:26:24.672Z",
+      "completedAt": null,
+      "course": {
+        "id": "692e08005ed4eb7ec4d43241",
+        "title": "Communication Skills",
+        "description": "This is the description for Communication Skills",
+        "createdAt": "2025-12-01T21:26:24.465Z",
+        "comments": [],
+        "materialIDs": [],
+        "level": 0,
+        "totalTasks": 11,
+        "code": "CSE206",
+        "tasks": [
+          {
+            "id": "692e08005ed4eb7ec4d43243",
+            "title": "Communication Skills - Task 1",
+            "description": "Description for Communication Skills - Task 1",
+            "courseID": "692e08005ed4eb7ec4d43241",
+            "createdAt": "2025-12-01T21:26:24.876Z",
+            "isCompleted": false,
+            "deadline": "2026-02-12T23:59:59.000Z"
+          },
+          {
+            "id": "692e08015ed4eb7ec4d43244",
+            "title": "Communication Skills - Task 2",
+            "description": "Description for Communication Skills - Task 2",
+            "courseID": "692e08005ed4eb7ec4d43241",
+            "createdAt": "2025-12-01T21:26:25.157Z",
+            "isCompleted": false,
+            "deadline": "2026-02-15T23:59:59.000Z"
+          },
+          {
+            "id": "692e08015ed4eb7ec4d43245",
+            "title": "Communication Skills - Task 3",
+            "description": "Description for Communication Skills - Task 3",
+            "courseID": "692e08005ed4eb7ec4d43241",
+            "createdAt": "2025-12-01T21:26:25.752Z",
+            "isCompleted": false,
+            "deadline": "2026-02-18T23:59:59.000Z"
+          },
+          {
+            "id": "692e08025ed4eb7ec4d43246",
+            "title": "Communication Skills - Task 4",
+            "description": "Description for Communication Skills - Task 4",
+            "courseID": "692e08005ed4eb7ec4d43241",
+            "createdAt": "2025-12-01T21:26:26.028Z",
+            "isCompleted": true,
+            "deadline": "2026-02-20T23:59:59.000Z"
+          }
+        ]
+      }
+    }
+  ]
+}
